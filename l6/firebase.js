@@ -12,8 +12,8 @@ const firebaseConfig = {
   projectId: "wseiapp-d06c4",
   storageBucket: process.env.STORAGE_BUCKET,
   messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: APP_ID,
-  measurementId: NEASUREMENT_ID
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
